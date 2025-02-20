@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contoh Variabel dan Tipe Data dalam JavaScript</title>
+  </head>
+  <body>
+    <h1>Contoh Variabel dan Tipe Data dalam JavaScript</h1>
+
+    <div id="infoPengguna">
+      <h2>Informasi Pengguna</h2>
+      <p id="nama"></p>
+      <p id="umur"></p>
+      <p id="mahasiswa"></p>
+      <p id="alamat"></p>
+      <p id="hobi"></p>
+      <p id="pekerjaan"></p>
+      <p id="pengalaman"></p>
+    </div>
+
+    <script>
+      // Deklarasi variabel dengan berbagai tipe data
+      let nama = "John Doe"; // String
+      let umur = 30; // Number
+      let mahasiswa = true; // Boolean
+      let alamat = null; // Null
+      let hobi = ["Membaca", "Bersepeda", "Berenang"]; // Array (Object)
+      let pekerjaan = "Pengembang"; // String
+      let pengalaman = "5 tahun"; // String
+
+      // Operasi dasar pada variabel
+      let umurTahunDepan = umur + 1;
+
+      // Menampilkan hasil menggunakan console.log()
+      console.log("Nama: " + nama);
+      console.log("Umur: " + umur);
+      console.log("Mahasiswa: " + mahasiswa);
+      console.log("Alamat: " + alamat);
+      console.log("Hobi: " + hobi);
+      console.log("Pekerjaan: " + pekerjaan);
+      console.log("Pengalaman: " + pengalaman);
+      console.log("Umur tahun depan: " + umurTahunDepan);
+
+      // Menampilkan hasil menggunakan alert()
+      // alert("Nama: " + nama + ", Umur: " + umur);
+
+      // Menampilkan hasil menggunakan document.write()
+      document.getElementById("nama").innerHTML = "Nama: " + nama;
+      document.getElementById("umur").innerHTML = "Umur: " + umur;
+      document.getElementById("mahasiswa").innerHTML =
+        "Mahasiswa: " + mahasiswa;
+      document.getElementById("alamat").innerHTML = "Alamat: " + alamat;
+      document.getElementById("hobi").innerHTML = "Hobi: " + hobi.join(", "); // Mengubah array menjadi string dengan koma sebagai pemisah
+      document.getElementById("pekerjaan").innerHTML =
+        "Pekerjaan: " + pekerjaan;
+      document.getElementById("pengalaman").innerHTML =
+        "Pengalaman: " + pengalaman;
+    </script>
+  </body>
+</html>
