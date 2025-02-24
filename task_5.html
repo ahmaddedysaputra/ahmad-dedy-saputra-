@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dialog JavaScript Gabungan</title>
+</head>
+<body>
+    <button id="tombolAlert">Klik untuk Alert</button><br><br>
+    <button id="tombolConfirm">Klik untuk Konfirmasi</button><br><br>
+    <button id="tombolPrompt">Klik untuk Input Nama</button>
+    <p id="hasilPrompt"></p>
+
+    <script>
+        // Dialog Alert
+        document.getElementById("tombolAlert").addEventListener("click", function() {
+            alert("Ini adalah pesan alert!");
+        });
+
+        // Dialog Confirm
+        document.getElementById("tombolConfirm").addEventListener("click", function() {
+            var konfirmasi = confirm("Apakah Anda yakin ingin melanjutkan?");
+            if (konfirmasi) {
+                alert("Anda memilih OK!");
+                // Tambahkan kode yang akan dijalankan jika pengguna memilih OK
+            } else {
+                alert("Anda memilih Cancel!");
+                //Tambahkan kode yang akan dijalankan jika pengguna memilih Cancel
+            }
+        });
+
+        // Dialog Prompt
+        document.getElementById("tombolPrompt").addEventListener("click", function() {
+            var nama = prompt("Masukkan nama Anda:", "");
+            if (nama !== null) {
+                document.getElementById("hasilPrompt").textContent = "Halo, " + nama + "!";
+            } else {
+                document.getElementById("hasilPrompt").textContent = "Input dibatalkan.";
+            }
+        });
+    </script>
+</body>
+</html>
