@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Belajar JavaScript Gabungan</title>
+    <script>
+        // Internal JavaScript
+        function tampilkanPesanInternal() {
+            alert("Pesan dari Internal JavaScript!");
+        }
+    </script>
+    <script src="external.js"></script>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <p>Ini adalah contoh gabungan Internal, External, dan Inline JavaScript.</p>
+
+    <button onclick="alert('Pesan dari Inline JavaScript!')">Klik untuk Inline</button><br><br>
+
+    <button onclick="tampilkanPesanInternal()">Klik untuk Internal</button><br><br>
+
+    <button onclick="tampilkanPesanEksternal()">Klik untuk Eksternal</button>
+
+</body>
+</html>
